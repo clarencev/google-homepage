@@ -1,7 +1,18 @@
+body {
+    font-size: Roboto;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 .navbar ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    align-content: space-between;
+    margin-top: 20px;
 }
 .logospace {
     display: flex;
@@ -36,6 +47,9 @@
     justify-content: center;
     margin-top: 35px;
     font-size: smaller;
+}
+.footer {
+    margin-top: 180px;
 }
 .footer ul {
     list-style-type: none;
