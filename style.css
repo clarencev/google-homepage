@@ -1,30 +1,35 @@
 .parent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-areas: ". . . . navbar"
+                         ". . logospace . ."
+                         ". . search . ."
+                         ". . language . ."
+                         "footer footer footer footer footer";
+    justify-content: center;
 }
 .navbar {
-
+    grid-area: navbar;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+.navbar ul li a {
+    display: block;
+    padding: 24px;
 }
 .logospace {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-area: logospace;
 }
 .search {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-area: search;
 }
 .language {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-area: language;
 }
 .footer {
-
+    grid-area: footer;
+}
+.footer ul {
+    list-style-type: none;
 }
