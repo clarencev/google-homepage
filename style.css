@@ -1,35 +1,44 @@
-.parent {
-    display: grid;
-    grid-template-areas: ". . . . navbar"
-                         ". . logospace . ."
-                         ". . search . ."
-                         ". . language . ."
-                         "footer footer footer footer footer";
-    justify-content: center;
-}
-.navbar {
-    grid-area: navbar;
-}
 .navbar ul {
     list-style-type: none;
     display: flex;
-}
-.navbar ul li a {
-    display: block;
-    padding: 24px;
+    justify-content: flex-end;
 }
 .logospace {
-    grid-area: logospace;
+    display: flex;
+    justify-content: center;
+    height: 28vh;
+}
+#logo {
+    align-self: flex-end;
+    padding: 20px;
 }
 .search {
-    grid-area: search;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+#searchbar {
+    width: 75vh;
+    height: 5vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    height: 35%;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
 }
 .language {
-    grid-area: language;
-}
-.footer {
-    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    font-size: smaller;
 }
 .footer ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
