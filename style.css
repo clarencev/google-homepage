@@ -8,9 +8,6 @@ a {
     text-decoration: none;
     color: rgba(123, 124, 128, 0.959);
 }
-a:visited {
-    color: rgba(123, 124, 128, 0.959);
-}
 a:hover {
     text-decoration: underline;
 }
@@ -21,6 +18,11 @@ a:hover {
     align-content: space-between;
     margin-top: 20px;
     font-size: smaller;
+    position: relative;
+    right: 50px;
+}
+.navbar ul a {
+    color: black;
 }
 .logospace {
     display: flex;
