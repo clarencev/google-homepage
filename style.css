@@ -1,8 +1,13 @@
 body {
-    font-size: Roboto;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
 }
 a {
     text-decoration: none;
+    color: rgba(67, 68, 70, 0.959);
+}
+a:visited {
+    color: rgba(67, 68, 70, 0.959)
 }
 a:hover {
     text-decoration: underline;
@@ -13,6 +18,7 @@ a:hover {
     justify-content: flex-end;
     align-content: space-between;
     margin-top: 20px;
+    font-size: smaller;
 }
 .logospace {
     display: flex;
@@ -28,11 +34,21 @@ a:hover {
     justify-content: center;
     align-content: space-around;
 }
+.search input[type=search] {
+    background-image: url(http://assets.stickpng.com/images/585e4ad1cb11b227491c3391.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-size: 18px;
+}
+.search input[type=search]:focus {
+    outline: none;
+}
 #searchbar {
     width: 75vh;
     height: 5vh;
     border-radius: 20px;
     padding: 20px;
+    padding-left: 38px;
 }
 .buttons {
     display: flex;
@@ -49,10 +65,15 @@ a:hover {
     font-size: smaller;
 }
 .footer {
-    margin-top: 180px;
+    background-color: rgba(226, 222, 222, 0.753);
+    font-size: smaller;
+    color: rgba(67, 68, 70, 0.959);
+}
+.iceland {
+    border-bottom: 1px solid rgb(158, 152, 152);
+    padding: 10px;
 }
 .footer ul {
-    list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    list-style-type: none;
 }
