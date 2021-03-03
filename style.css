@@ -1,13 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 a {
     text-decoration: none;
-    color: rgba(67, 68, 70, 0.959);
+    color: rgba(123, 124, 128, 0.959);
 }
 a:visited {
-    color: rgba(67, 68, 70, 0.959)
+    color: rgba(123, 124, 128, 0.959);
 }
 a:hover {
     text-decoration: underline;
@@ -35,20 +37,22 @@ a:hover {
     align-content: space-around;
 }
 .search input[type=search] {
-    background-image: url(http://assets.stickpng.com/images/585e4ad1cb11b227491c3391.png);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png);
     background-repeat: no-repeat;
     background-position: 10px 10px;
-    background-size: 18px;
+    background-size: 17px;
+    border: 1px solid rgb(180, 176, 176);
 }
 .search input[type=search]:focus {
     outline: none;
 }
 #searchbar {
-    width: 75vh;
+    width: 77vh;
     height: 5vh;
     border-radius: 20px;
     padding: 20px;
     padding-left: 38px;
+    margin-top: 5px;
 }
 .buttons {
     display: flex;
@@ -63,17 +67,40 @@ a:hover {
     justify-content: center;
     margin-top: 35px;
     font-size: smaller;
+    height: 250px;
+}
+.language a {
+    color: blue;
 }
 .footer {
-    background-color: rgba(226, 222, 222, 0.753);
+    background-color: rgba(212, 204, 204, 0.3);
     font-size: smaller;
-    color: rgba(67, 68, 70, 0.959);
+    color: rgba(123, 124, 128, 0.959);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
 }
 .iceland {
     border-bottom: 1px solid rgb(158, 152, 152);
-    padding: 10px;
+    order: -1;
+    flex: 1 0 100%;
 }
 .footer ul {
-    display: flex;
     list-style-type: none;
+    display: flex;
+    flex: 1 1 auto;
+}
+.leftlinks {
+    justify-content: flex-start;
+    order: 0;
+    flex: 1 1 0;
+}
+.rightlinks {
+    justify-content: flex-end;
+    order: 0;
+    flex: 1 1 0;
+} 
+.centerspace {
+    order: 0;
+    flex: 1 1 0;
 }
