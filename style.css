@@ -67,7 +67,7 @@ a:hover {
     justify-content: center;
     margin-top: 35px;
     font-size: smaller;
-    height: 250px;
+    height: 238px;
 }
 .language a {
     color: blue;
@@ -94,12 +94,21 @@ a:hover {
     justify-content: flex-start;
     order: 0;
     flex: 1 1 0;
+    margin: 0;
+}
+.leftlinks a {
+    padding: 15px;
+    position: relative;
+    left: -50px;
 }
 .rightlinks {
     justify-content: flex-end;
     order: 0;
     flex: 1 1 0;
 } 
+.rightlinks a {
+    padding: 15px;
+}
 .centerspace {
     order: 0;
     flex: 1 1 0;
