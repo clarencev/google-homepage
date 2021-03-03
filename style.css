@@ -24,6 +24,11 @@ a:hover {
 .navbar ul a {
     color: black;
 }
+.acc img {
+    border-radius: 25px 25px;
+    position: relative;
+    bottom: 9px;
+}
 .logospace {
     display: flex;
     justify-content: center;
