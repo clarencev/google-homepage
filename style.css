@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 a {
     text-decoration: none;
@@ -19,7 +20,7 @@ a:hover {
     margin-top: 20px;
     font-size: smaller;
     position: relative;
-    right: 50px;
+    right: 10px;
 }
 .navbar ul a {
     color: black;
@@ -28,6 +29,9 @@ a:hover {
     border-radius: 25px 25px;
     position: relative;
     bottom: 9px;
+}
+.menuicon img {
+    width: 16px;
 }
 .logospace {
     display: flex;
