@@ -37,6 +37,8 @@ a:hover {
     display: flex;
     justify-content: center;
     height: 28vh;
+    position: relative;
+    bottom: 19px;
 }
 #logo {
     align-self: flex-end;
